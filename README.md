@@ -103,6 +103,28 @@ each new hex, in its worktree, before the first prompt, following Amp's conventi
 If it fails, no hex is created (the spawn fails with the script's output) and the
 prompt is never sent.
 
+## Clients (Mac, phone, any tailnet machine)
+
+The server stays on adi-linux. A client is the `hex` CLI, `hex attach` (Tern cards
+when Tern is running, plain terminal otherwise), and the OMP extension. In a Tern
+pane, attach keeps one Tern session for both cards and keyboard input; outside
+Tern it uses plain readline. It does
+not need Incus. `~/.hexes/client.json` names the SSH hop used for project copy
+and `hex shell`; `~/.hexes/token` (mode 600) is the owner key, read automatically
+when local Incus is absent, so GUI-launched Tern and OMP do not need extra env.
+
+```bash
+sh client-install.sh    # after the repo is at ~/tailnet-hexes
+```
+
+The installer adds Bun for Tern's `hex attach`; OMP and the Stencil Tern app
+must already be installed on macOS. On Termux, it installs the `hex` CLI only;
+Tern/OMP are wired only when their app/config directories already exist.
+
+HTTP (`list`, `send`, `attach`, the OMP tools) uses the tailnet proxy. Spawn of a
+new project and `hex shell` SSH to adi-linux and run Incus there. The hop is
+pubkey-only and listens on the tailnet address only.
+
 ## Model sign-in (one time)
 
 Host credentials are deliberately not copied into the VM. Open the UI, go to
@@ -128,6 +150,8 @@ code: pick `muse-spark-1.3` (standard) for code you do not want shared.
 - `vm/hexes-incus.sh` sets up Incus inside the VM for hexes: pool, bridge, ACL `hex-egress`, profile `hex`.
 - `vm/hex-base.sh` builds `hex-base`, the container every hex is cloned from (expects the
   pi-env daemon at `/root/pi-env` in the VM).
+- `vm/cloud/` repeats the stack on an OCI Ampere ARM box (Zabbly incus, Oracle
+  firewall fix, tailnet-only bind + UFW, Playwright Chromium).
 - `hexsh.mjs <id> "<command>"` runs a command inside a hex the way `!command` does (used by the E2E).
 - `e2e.mjs` is the end-to-end test. It writes `e2e-artifact.json` (check names
   and verdicts only, so it is repeatable).
@@ -151,3 +175,31 @@ I file push vm/hex-base.sh hexes-vm/root/ && I exec hexes-vm -- bash /root/hex-b
 
 For an HTTPS MagicDNS name, run once (needs sudo):
 `sudo tailscale set --operator=$USER && tailscale serve --bg --https=443 http://100.109.83.57:8787`
+
+## Cloud deployment (OCI Ampere A1)
+
+The same stack runs 24/7 on `hexes-cloud-arm` (Mumbai, 4 OCPU / 24 GB RAM,
+Always Free): `http://100.119.204.13:8787` on the tailnet. Scripts live in
+`vm/cloud/` (`setup-cloud-hexes.sh` is the full installer; `oci-arm-claimer.sh`
+polled capacity until PAYG unlocked the commercial pool).
+
+Cloud-only divergences from `hexes-vm`, all in the installer:
+
+- Incus comes from Zabbly stable, not Ubuntu archives: noble's 6.0.0 cannot do
+  idmapped (`shift`) mounts on newer kernels
+  (`Required idmapping abilities not available`); hex worktrees need shift.
+- Oracle's Ubuntu image ships host iptables `REJECT` rules that run before
+  Incus's chains and kill container DNS/DHCP/forwarding; the installer drops
+  them and `hexes-firewall.service` keeps them dropped across reboots.
+- The service binds the tailnet IP (never `0.0.0.0`); UFW default-deny allows
+  22, bridge DHCP/DNS plus container forwarding narrowly, and 8787 on
+  `tailscale0` only. The OCI security list (22-only ingress) is the outer wall.
+- No deb Chromium exists for ARM64 (snap-only, and snapd hangs on minimal
+  cloud images): a Playwright Chromium download feeds the Browser panel. The
+  app's auto-discovery does not list Playwright's `chrome-linux-arm64` folder,
+  so the service pins `PI_POCKET_BROWSER` to the exact binary.
+
+Verified live: provider sign-ins merged from the owner's personal OMP config
+(Meta API key copied blind, never printed), default model
+`meta/muse-spark-1.3-contributor`, a minimal agent turn replying exactly,
+public `:8787` refused, and a fresh container getting DHCP/DNS/egress under UFW.

@@ -6,7 +6,7 @@
 import { spawnSync } from "node:child_process";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { createClient, VM, PUBLIC_URL as PUBLIC, quote as q, isGitUrl as isUrl, loadRegistry, saveRegistry, vm } from "./hex-client.mjs";
+import { createClient, VM, PUBLIC_URL as PUBLIC, quote as q, isGitUrl as isUrl, loadRegistry, saveRegistry, vm, sshTarget } from "./hex-client.mjs";
 
 function fail(message) { console.error(`hex: ${message}`); process.exit(1); }
 const client = createClient();
@@ -87,7 +87,12 @@ if (cmd === "add") {
     if (!name) fail(`hex ${id} has no container`);
     inner = `incus exec ${name} -t --user 1000 --group 1000 --cwd ${q(path)} --env HOME=/home/hex -- bash -l`;
   }
-  spawnSync("sg", ["incus-admin", "-c", `incus exec ${VM} -t -- ${inner}`], { stdio: "inherit" });
+  const target = sshTarget();
+  const result = target
+    ? spawnSync("ssh", ["-t", "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=accept-new", target, `sg incus-admin -c ${q(`incus exec ${VM} -t -- ${inner}`)}`], { stdio: "inherit" })
+    : spawnSync("sg", ["incus-admin", "-c", `incus exec ${VM} -t -- ${inner}`], { stdio: "inherit" });
+  if (result.error) throw result.error;
+  if (result.status) process.exitCode = result.status;
 } else {
   console.log(`hex — hexes (Amp-style orbs) on pi-durable, inside Incus VM ${VM}, tailnet-only
 

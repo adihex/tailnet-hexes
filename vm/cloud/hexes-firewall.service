@@ -1,0 +1,14 @@
+[Unit]
+Description=Drop Oracle image REJECT rules so incus chains govern containers
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Leading dash: rules are already absent on most boots (they only reappear if
+# Oracle's image tooling restores them); either state is fine.
+ExecStart=-/usr/sbin/iptables -D INPUT -j REJECT --reject-with icmp-host-prohibited
+ExecStart=-/usr/sbin/iptables -D FORWARD -j REJECT --reject-with icmp-host-prohibited
+
+[Install]
+WantedBy=multi-user.target

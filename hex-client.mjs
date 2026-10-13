@@ -9,16 +9,64 @@ export const VM = process.env.HEX_VM ?? "hexes-vm";
 export const PUBLIC_URL = process.env.HEX_PUBLIC_URL ?? "http://adi-linux.tail6c6fd6.ts.net:8787";
 const CONFIG = "/opt/hexes/data/config.json";
 const REGISTRY = join(homedir(), ".hexes", "projects.json");
+const CLIENT_CONFIG = join(homedir(), ".hexes", "client.json");
+const TOKEN_FILE = join(homedir(), ".hexes", "token");
 export const quote = (value) => `'${String(value).replace(/'/g, `'\\''`)}'`;
 export const isGitUrl = (value) => /^(https?:|git@|ssh:)/.test(value) || value.endsWith(".git");
 
-export function vm(script, { allowFail = false } = {}) {
-  const result = spawnSync("sg", ["incus-admin", "-c", `incus exec ${VM} -T -- runuser -u hexes -- bash -s`], {
-    input: `set -euo pipefail\n${script}\n`, encoding: "utf8",
-  });
+export function clientConfig() {
+  if (!existsSync(CLIENT_CONFIG)) return {};
+  try {
+    return JSON.parse(readFileSync(CLIENT_CONFIG, "utf8"));
+  } catch (error) {
+    throw new Error(`bad ${CLIENT_CONFIG}: ${error.message}`);
+  }
+}
+
+/** SSH target for Incus hops. Empty on the hexes host, which uses local Incus. */
+export function sshTarget() {
+  return process.env.HEX_SSH || clientConfig().ssh || "";
+}
+
+function remote() {
+  return sshTarget() !== "";
+}
+
+let incusOk;
+function incusAvailable() {
+  if (remote()) return false;
+  if (incusOk !== undefined) return incusOk;
+  incusOk = spawnSync("sg", ["incus-admin", "-c", "true"], { encoding: "utf8" }).status === 0;
+  return incusOk;
+}
+
+function finish(result, label, { allowFail = false } = {}) {
   const value = { ok: result.status === 0, out: (result.stdout ?? "").trim(), err: (result.stderr ?? "").trim() };
-  if (!value.ok && !allowFail) throw new Error(`in ${VM}: ${(value.err || value.out || result.error?.message || "command failed").slice(0, 500)}`);
+  if (!value.ok && !allowFail) throw new Error(`${label}: ${(value.err || value.out || result.error?.message || "command failed").slice(0, 500)}`);
   return value;
+}
+
+export function vm(script, { allowFail = false } = {}) {
+  const body = `set -euo pipefail\n${script}\n`;
+  if (remote()) {
+    const target = sshTarget();
+    const remoteCmd = `sg incus-admin -c ${quote(`incus exec ${VM} -T -- runuser -u hexes -- bash -s`)}`;
+    return finish(spawnSync("ssh", ["-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=accept-new", target, remoteCmd], {
+      input: body, encoding: "utf8",
+    }), `ssh ${target} ${VM}`, { allowFail });
+  }
+  return finish(spawnSync("sg", ["incus-admin", "-c", `incus exec ${VM} -T -- runuser -u hexes -- bash -s`], {
+    input: body, encoding: "utf8",
+  }), `in ${VM}`, { allowFail });
+}
+
+export function copyIntoVm(source, vmPath) {
+  if (remote()) {
+    const target = sshTarget();
+    const extract = `sg incus-admin -c ${quote(`incus exec ${VM} -T -- runuser -u hexes -- tar -xf - -C ${vmPath}`)}`;
+    return spawnSync("bash", ["-c", `set -o pipefail; tar -C ${quote(source)} -cf - . | ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new ${quote(target)} ${quote(extract)}`], { encoding: "utf8" });
+  }
+  return spawnSync("bash", ["-c", `set -o pipefail; tar -C ${quote(source)} -cf - . | sg incus-admin -c "incus exec ${VM} -T -- runuser -u hexes -- tar -xf - -C ${vmPath}"`], { encoding: "utf8" });
 }
 
 export function loadRegistry() { return existsSync(REGISTRY) ? JSON.parse(readFileSync(REGISTRY, "utf8")) : {}; }
@@ -45,7 +93,7 @@ export function ensureProject(arg) {
     } else {
       if (!existsSync(source)) throw new Error(`project ${name}: host path missing: ${source}`);
       vm(`mkdir -p ${quote(vmPath)}`);
-      const copy = spawnSync("bash", ["-c", `set -o pipefail; tar -C ${quote(source)} -cf - . | sg incus-admin -c "incus exec ${VM} -T -- runuser -u hexes -- tar -xf - -C ${vmPath}"`], { encoding: "utf8" });
+      const copy = copyIntoVm(source, vmPath);
       if (copy.status !== 0) throw new Error(`copy ${source} into ${VM}: ${(copy.stderr ?? copy.error?.message ?? "failed").slice(0, 400)}`);
       vm(`cd ${quote(vmPath)}; if [ ! -d .git ]; then git init -q && git add -A && git commit -qm 'hex: initial'; else git worktree prune; fi`);
     }
@@ -54,22 +102,26 @@ export function ensureProject(arg) {
   return { name, vmPath };
 }
 
+function readTokenFile(file) {
+  const contents = readFileSync(file, "utf8").trim();
+  if (!contents.startsWith("{")) return contents;
+  const stored = JSON.parse(contents);
+  return stored.token ?? stored.ownerToken;
+}
+
 function ownerToken() {
   if (process.env.HEX_TOKEN) return process.env.HEX_TOKEN;
-  if (process.env.HEX_TOKEN_FILE) {
-    const contents = readFileSync(process.env.HEX_TOKEN_FILE, "utf8").trim();
-    if (!contents.startsWith("{")) return contents;
-    const stored = JSON.parse(contents);
-    return stored.token ?? stored.ownerToken;
-  }
+  if (process.env.HEX_TOKEN_FILE) return readTokenFile(process.env.HEX_TOKEN_FILE);
+  if ((remote() || !incusAvailable()) && existsSync(TOKEN_FILE)) return readTokenFile(TOKEN_FILE);
   return JSON.parse(vm(`cat ${CONFIG}`).out).ownerToken;
 }
 
 export class HexesClient {
   #token;
-  constructor({ baseUrl = process.env.HEX_URL ?? "http://100.109.83.57:8787", token, publicUrl = PUBLIC_URL } = {}) {
-    this.baseUrl = baseUrl.replace(/\/$/, "");
-    this.publicUrl = publicUrl.replace(/\/$/, "");
+  constructor({ baseUrl, token, publicUrl } = {}) {
+    const cfg = clientConfig();
+    this.baseUrl = (baseUrl ?? process.env.HEX_URL ?? cfg.url ?? "http://100.109.83.57:8787").replace(/\/$/, "");
+    this.publicUrl = (publicUrl ?? process.env.HEX_PUBLIC_URL ?? cfg.publicUrl ?? PUBLIC_URL).replace(/\/$/, "");
     this.#token = token;
   }
   url(id) { return `${this.publicUrl}/#/c/${encodeURIComponent(id)}`; }

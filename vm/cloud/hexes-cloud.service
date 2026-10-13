@@ -1,0 +1,19 @@
+[Unit]
+Description=Tailnet Hexes on Cloud ARM
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=hexes
+WorkingDirectory=/opt/hexes/app
+Environment=PI_POCKET_DIR=/opt/hexes/data
+Environment=HEXES=1
+Environment=PI_POCKET_BROWSER=/home/hexes/.cache/ms-playwright/chromium-1248/chrome-linux-arm64/chrome
+ExecStart=/usr/local/bin/node bin/pi-pocket.js --host 100.119.204.13 --yes --port 8787 --cwd /home/hexes/hex-projects
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target
