@@ -1,0 +1,138 @@
+{
+  "suite": "tailnet-hexes-vm",
+  "checks": [
+    {
+      "name": "9 UI served on tailnet IP",
+      "ok": true
+    },
+    {
+      "name": "9 UI not served on LAN IP",
+      "ok": true
+    },
+    {
+      "name": "6 bad token rejected",
+      "ok": true
+    },
+    {
+      "name": "I0 control: host probe listener reachable from host",
+      "ok": true
+    },
+    {
+      "name": "I1 guest root cannot reach host services (bridge IP)",
+      "ok": true
+    },
+    {
+      "name": "I2 guest root cannot reach host via LAN IP",
+      "ok": true
+    },
+    {
+      "name": "I3 guest root cannot reach tailnet (incl. own UI)",
+      "ok": true
+    },
+    {
+      "name": "I4 control: hexes user has internet egress",
+      "ok": true
+    },
+    {
+      "name": "I5 host filesystem absent in VM",
+      "ok": true
+    },
+    {
+      "name": "I6 agent user is unprivileged (no sudo)",
+      "ok": true
+    },
+    {
+      "name": "1 unknown project rejected, no hex created",
+      "ok": true
+    },
+    {
+      "name": "8 failing .agents/setup: no hex created, prompt never sent",
+      "ok": true
+    },
+    {
+      "name": "spawn two hexes",
+      "ok": true
+    },
+    {
+      "name": "2/3 hexes get distinct worktrees, never the project root",
+      "ok": true
+    },
+    {
+      "name": "8 .agents/setup ran inside each hex worktree",
+      "ok": true
+    },
+    {
+      "name": "model: hex completes task in its worktree",
+      "ok": true
+    },
+    {
+      "name": "model: hex completes task in its worktree",
+      "ok": true
+    },
+    {
+      "name": "H1 tools run as the unprivileged hex user in the hex's own container",
+      "ok": true
+    },
+    {
+      "name": "H2 owner token, server data and code are absent in a hex",
+      "ok": true
+    },
+    {
+      "name": "H3 a hex cannot reach the server, host, LAN, or tailnet",
+      "ok": true
+    },
+    {
+      "name": "H4 control: a hex has internet egress",
+      "ok": true
+    },
+    {
+      "name": "H5 a hex cannot plant git config, hooks, or attributes",
+      "ok": true
+    },
+    {
+      "name": "H6 hexes cannot see or reach each other",
+      "ok": true
+    },
+    {
+      "name": "H7 normal git works in a hex",
+      "ok": true
+    },
+    {
+      "name": "H8 sessions outside a hex are refused",
+      "ok": true
+    },
+    {
+      "name": "4 service back after VM reboot",
+      "ok": true
+    },
+    {
+      "name": "4 hexes and history survive VM reboot",
+      "ok": true
+    },
+    {
+      "name": "model: hex wakes after reboot and continues",
+      "ok": true
+    },
+    {
+      "name": "H9 a git filter planted by a hex never runs as the server",
+      "ok": true
+    },
+    {
+      "name": "model: Jojo starts a hex that completes a task",
+      "ok": true
+    },
+    {
+      "name": "7 rm refuses a hex with uncommitted work",
+      "ok": true
+    },
+    {
+      "name": "7 rm --force removes worktree, keeps branch",
+      "ok": true
+    },
+    {
+      "name": "7 sibling hex untouched by rm",
+      "ok": true
+    }
+  ],
+  "pass": true
+}

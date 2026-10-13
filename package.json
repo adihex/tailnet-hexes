@@ -1,0 +1,11 @@
+{
+  "name": "tailnet-hexes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "attach": "bun hex-attach.tsx"
+  },
+  "dependencies": {
+    "@stencil-hq/tern": "0.1.0"
+  }
+}
