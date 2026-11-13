@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Inbox Imp</title>
+  <desc id="desc">A walking cream envelope with a single orange eye where its seal should be.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#3D493C"/>
+  <path d="m386 699-29 72h-54m335-72 29 72h54" fill="none" stroke="#E7A768" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M274 333h476q30 0 30 30v318q0 30-30 30H274q-30 0-30-30V363q0-30 30-30Z" fill="#E3D5B4"/>
+  <path d="m259 688 253-200 253 200" fill="#F5E9C9"/>
+  <path d="m256 350 256 209 256-209" fill="#F5E9C9" stroke="#BFB395" stroke-width="18" stroke-linejoin="round"/>
+  <circle cx="512" cy="533" r="99" fill="#E7A768"/>
+  <path d="M442 531q70-82 140 0-70 82-140 0Z" fill="#FFF3D7"/>
+  <circle cx="527" cy="531" r="30" fill="#3D493C"/>
+  <path d="m333 333 21-80 80 80m157 0 79-80 21 80" fill="#E7A768"/>
+</svg>

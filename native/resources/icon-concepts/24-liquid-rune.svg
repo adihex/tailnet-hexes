@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Liquid Rune</title>
+  <desc id="desc">An organic dark petrol H with a small vermilion droplet suspended between its uprights.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#F4E9D6"/>
+  <path d="M299 326c-8-92 140-96 140 0v84q0 46 49 46h48q49 0 49-46v-84c0-96 148-92 140 0l-18 381c-4 91-133 87-130-3l3-91q2-47-45-47h-46q-47 0-45 47l3 91c3 90-126 94-130 3Z" fill="#22434B"/>
+  <path d="M512 245q-73 80-42 118 39 45 81 0 31-38-39-118Z" fill="#D9755C"/>
+  <circle cx="782" cy="710" r="18" fill="#D9755C"/>
+</svg>

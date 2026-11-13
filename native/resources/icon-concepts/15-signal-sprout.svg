@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Signal Sprout</title>
+  <desc id="desc">A small sprout in a hexagonal terracotta pot, sending two hand-drawn signal arcs.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#F1CCB8"/>
+  <path d="M512 590V379m0 77q-124 9-151-121 124-9 151 121Zm0-55q128 1 153-130-130 0-153 130Z" fill="#526E49" stroke="#526E49" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M328 287q32-51 88-68m-145 44q46-76 131-101" fill="none" stroke="#526E49" stroke-width="20" stroke-linecap="round"/>
+  <path d="m512 552 181 65-38 152-143 63-143-63-38-152Z" fill="#AF6352"/>
+  <path d="m331 617 181 70 181-70" fill="#CD8770"/>
+  <path d="m395 692 34 23-34 23m76 0h43" fill="none" stroke="#F8E9CD" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="723" cy="418" r="16" fill="#AF6352"/>
+</svg>

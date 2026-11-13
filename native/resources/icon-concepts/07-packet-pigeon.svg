@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Packet Pigeon</title>
+  <desc id="desc">A folded-paper pigeon with an oversized cream wing and a coral beak on sky blue.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#B9D9E8"/>
+  <path d="m269 539 119 118-111 119Z" fill="#DB877C"/>
+  <path d="m272 479 220-61 57-150 123 86 16 177-85 189-212-62Z" fill="#39617D"/>
+  <path d="m549 268 123 86-143 77-37-13Z" fill="#7394A6"/>
+  <path d="m672 354 109 59-104 39Z" fill="#D57758"/>
+  <path d="m272 479 331 32-111 209Z" fill="#FFF1D4"/>
+  <path d="m272 479 220 241-101-62Z" fill="#D5C9AB"/>
+  <circle cx="610" cy="377" r="17" fill="#172E3F"/>
+  <path d="m492 720-16 49m102-61 18 50" stroke="#D57758" stroke-width="24" stroke-linecap="round"/>
+  <path d="m247 344 52 12m-29-63 42 24" stroke="#FFF1D4" stroke-width="15" stroke-linecap="round"/>
+</svg>

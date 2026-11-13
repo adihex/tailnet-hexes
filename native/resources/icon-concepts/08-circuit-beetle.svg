@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Circuit Beetle</title>
+  <desc id="desc">A symmetrical green beetle whose legs and wing cases form a tiny circuit board.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#173D34"/>
+  <g fill="none" stroke="#E1EBC6" stroke-width="25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m379 452-90-49v-69m77 209H253m126 94-90 58v70m356-313 90-49v-69m-77 209h113m-126 94 90 58v70"/>
+    <path d="m477 344-51-95m121 95 51-95"/>
+  </g>
+  <circle cx="512" cy="365" r="82" fill="#0E2823"/>
+  <path d="M506 400c-204-55-250 294 6 357V400Z" fill="#A4D6A9"/>
+  <path d="M518 400c204-55 250 294-6 357V400Z" fill="#6FAE8C"/>
+  <path d="M512 417v312m-2-214h-77v68m81 12h74v-77" fill="none" stroke="#173D34" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#173D34"><circle cx="433" cy="595" r="21"/><circle cx="588" cy="506" r="21"/></g>
+  <g fill="#EF9D78"><circle cx="426" cy="249" r="24"/><circle cx="598" cy="249" r="24"/></g>
+</svg>

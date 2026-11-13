@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Hexes — Night Moth</title>
+  <desc id="desc">The selected Night Moth mark: cream geometric wings, pink hexagonal eye spots, and an aubergine background.</desc>
+  <rect id="background" width="1024" height="1024" fill="#2E2C43"/>
+  <path d="M490 435Q354 231 268 322q-87 129 168 220-221 39-122 166 92 112 181-110m39-163q136-204 222-113 87 129-168 220 221 39 122 166-92 112-181-110" fill="#E8DCC2"/>
+  <path d="m359 371 70 40v80l-70 40-70-40v-80Zm306 0 70 40v80l-70 40-70-40v-80Z" fill="#626178"/>
+  <path d="m359 413 34 19v38l-34 19-34-19v-38Zm306 0 34 19v38l-34 19-34-19v-38Z" fill="#D39B9D"/>
+  <path d="m373 604 40 47-40 47-40-47Zm278 0 40 47-40 47-40-47Z" fill="#D39B9D"/>
+  <path d="m495 395-47-80m81 80 47-80" fill="none" stroke="#E8DCC2" stroke-width="17" stroke-linecap="round"/>
+  <rect x="484" y="384" width="56" height="318" rx="28" fill="#D39B9D"/>
+  <circle cx="512" cy="390" r="38" fill="#D39B9D"/>
+  <circle cx="760" cy="251" r="16" fill="#E8DCC2"/>
+</svg>

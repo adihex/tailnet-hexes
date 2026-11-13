@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Sneaky Raccoon</title>
+  <desc id="desc">A charcoal-masked raccoon with one winking eye, on a muted tangerine tile.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#E9A168"/>
+  <path d="M285 440q-82-182 59-192 86 5 112 118m112 0q26-113 112-118 141 10 59 192" fill="#4D5960"/>
+  <path d="M312 369q-32-74 25-78 42 5 67 82m216 0q25-77 67-82 57 4 25 78" fill="#D9D8CC"/>
+  <path d="M512 330q220 0 266 225-90 165-266 221-176-56-266-221 46-225 266-225Z" fill="#A1A6A2"/>
+  <path d="M246 555q154 8 266 105 112-97 266-105-90 165-266 221-176-56-266-221Z" fill="#EEE7D3"/>
+  <path d="M277 492q92-78 235 9 143-87 235-9l-45 127q-111-44-190-27-79-17-190 27Z" fill="#35434B"/>
+  <ellipse cx="411" cy="535" rx="42" ry="30" fill="#EEE7D3"/>
+  <circle cx="423" cy="535" r="19" fill="#35434B"/>
+  <path d="m572 545 33-21 33 21" fill="none" stroke="#EEE7D3" stroke-width="16" stroke-linecap="round"/>
+  <path d="m475 650 37-17 37 17-37 36Z" fill="#35434B"/>
+  <path d="M512 686v26m0 0-28 14m28-14 28 14" fill="none" stroke="#35434B" stroke-width="13" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Paper Ghost</title>
+  <desc id="desc">An eight-bit ivory ghost with mismatched eyes and a pink pixel blush, on lavender.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#B7ACD9"/>
+  <g shape-rendering="crispEdges">
+    <path d="M411 288h224v56h56v56h56v392h-84v-56h-56v56h-84v-56h-56v56h-84v-56h-56V400h56v-56h28Z" fill="#9288B5"/>
+    <path d="M400 256h224v56h56v56h56v392h-84v-56h-56v56h-84v-56h-56v56h-84v-56h-56V368h56v-56h28Z" fill="#FFF2D6"/>
+    <path d="M400 424h56v112h-56Zm168 0h56v84h-56Z" fill="#3B364F"/>
+    <path d="M372 564h56v28h-56Zm224 0h56v28h-56Z" fill="#DF9AA1"/>
+    <path d="M484 592h56v28h-56Z" fill="#3B364F"/>
+    <path d="M764 284h28v28h28v28h-28v28h-28v-28h-28v-28h28ZM232 620h28v28h28v28h-28v28h-28v-28h-28v-28h28Z" fill="#FFF2D6"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Disco Shroom</title>
+  <desc id="desc">A squat red mushroom with square cap spots and a checkerboard dance floor.</desc>
+  <defs>
+    <pattern id="checker" width="112" height="112" patternUnits="userSpaceOnUse">
+      <rect width="112" height="112" fill="#E8C8D3"/>
+      <path d="M0 0h56v56H0Zm56 56h56v56H56Z" fill="#DAB6C5"/>
+    </pattern>
+    <clipPath id="tile"><rect x="64" y="64" width="896" height="896" rx="208"/></clipPath>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#E8C8D3"/>
+  <path d="M64 704h896v256H64Z" fill="url(#checker)" clip-path="url(#tile)"/>
+  <path d="M434 477h156l29 240q4 48-49 48H454q-53 0-49-48Z" fill="#FFF0D4"/>
+  <path d="M238 510q30-242 274-250 244 8 274 250 4 40-43 40H281q-47 0-43-40Z" fill="#B84C50"/>
+  <g fill="#FFF0D4">
+    <rect x="342" y="407" width="72" height="65" rx="14" transform="rotate(-18 378 439)"/>
+    <rect x="477" y="306" width="85" height="79" rx="15" transform="rotate(13 520 345)"/>
+    <rect x="632" y="416" width="62" height="69" rx="14" transform="rotate(19 663 450)"/>
+  </g>
+  <path d="M478 628v23m68-23v23" stroke="#51434C" stroke-width="18" stroke-linecap="round"/>
+  <path d="M489 691q23 18 46 0" fill="none" stroke="#51434C" stroke-width="13" stroke-linecap="round"/>
+  <path d="m760 281 12 29 29 12-29 12-12 29-12-29-29-12 29-12Z" fill="#FFF0D4"/>
+</svg>

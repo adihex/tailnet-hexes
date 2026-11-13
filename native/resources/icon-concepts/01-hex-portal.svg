@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Hex Portal</title>
+  <desc id="desc">A mint hexagonal portal with a small coral satellite on midnight blue.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#142A32"/>
+  <path d="M641 294 512 220 264 364V652L512 796 760 652V458" fill="none" stroke="#7AE3BF" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m512 332 156 90v180l-156 90-156-90V422Z" fill="#7AE3BF"/>
+  <path d="m512 430 72 42v82l-72 42-72-42v-82Z" fill="#142A32"/>
+  <circle cx="748" cy="338" r="50" fill="#FF947B"/>
+  <circle cx="748" cy="338" r="14" fill="#142A32"/>
+  <path d="M258 746h54m-27-27v54" stroke="#FFEBCE" stroke-width="20" stroke-linecap="round"/>
+</svg>

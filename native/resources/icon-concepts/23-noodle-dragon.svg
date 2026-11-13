@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Noodle Dragon</title>
+  <desc id="desc">A sleepy lime dragon tied into a loose noodle knot on dusty violet.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#655082"/>
+  <path d="m588 378 5-78 52 38 13-77 52 52 25-54 40 91Z" fill="#ECA778"/>
+  <path d="M701 394c96 128-33 301-217 287-192-15-221-178-113-221 128-51 225 106 125 167-104 64-177 72-153 157" fill="none" stroke="#D9DF88" stroke-width="100" stroke-linecap="round"/>
+  <path d="M660 469c8 114-113 193-241 153" fill="none" stroke="#ADBA75" stroke-width="28" stroke-linecap="round"/>
+  <path d="m617 354 66-56 94 53 21 100-89 53-92-49Z" fill="#D9DF88" stroke="#D9DF88" stroke-width="28" stroke-linejoin="round"/>
+  <path d="m656 320-17-68 58 48m41 6 39-51 2 75" fill="#FFF1D2"/>
+  <path d="m658 378 31-11 23 22" fill="none" stroke="#514366" stroke-width="17" stroke-linecap="round"/>
+  <circle cx="755" cy="423" r="11" fill="#514366"/>
+  <path d="m741 472-42-6" stroke="#514366" stroke-width="13" stroke-linecap="round"/>
+  <path d="m343 784-56-39 27 72Z" fill="#D9DF88"/>
+</svg>

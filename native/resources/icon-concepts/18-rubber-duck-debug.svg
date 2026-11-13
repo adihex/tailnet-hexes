@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Rubber Duck Debug</title>
+  <desc id="desc">A chunky golden rubber duck with a terminal chevron on its wing, on deep teal.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#2B5C57"/>
+  <path d="M251 527q80 51 153 2 52-26 63-70-34-115 57-176 98-65 180 19 58 65 17 153-28 56-85 72 54 28 66 80 9 149-203 163-233 9-248-243Z" fill="#E7BB55"/>
+  <path d="m693 389 100 47q16 10 0 24l-102 22q-33-46 2-93Z" fill="#D47A4B"/>
+  <circle cx="627" cy="367" r="22" fill="#263D38"/>
+  <circle cx="633" cy="359" r="7" fill="#FFF0CA"/>
+  <path d="M374 595q59-72 152-10 12 91-81 104" fill="none" stroke="#CB9C40" stroke-width="24" stroke-linecap="round"/>
+  <path d="m414 595 39 31-39 31m74 4h36" fill="none" stroke="#2B5C57" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M297 801h415" stroke="#7EAAA0" stroke-width="20" stroke-linecap="round"/>
+</svg>

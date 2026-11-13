@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Tiny Kraken</title>
+  <desc id="desc">A coral six-armed octopus with a softly hexagonal head, on deep ocean blue.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#17374D"/>
+  <g fill="none" stroke="#EFA391" stroke-width="65" stroke-linecap="round">
+    <path d="M353 523q-146 20-98 137 32 61 85 8"/>
+    <path d="M407 606q-108 156-23 173 59 6 55-73"/>
+    <path d="M480 632q-49 172 32 160"/>
+    <path d="M671 523q146 20 98 137-32 61-85 8"/>
+    <path d="M617 606q108 156 23 173-59 6-55-73"/>
+    <path d="M544 632q49 172-32 160"/>
+  </g>
+  <path d="m512 239 165 94 42 174q-4 159-207 171-203-12-207-171l42-174Z" fill="#EFA391" stroke="#EFA391" stroke-width="22" stroke-linejoin="round"/>
+  <ellipse cx="425" cy="472" rx="48" ry="58" fill="#FFF0DA"/>
+  <ellipse cx="599" cy="472" rx="48" ry="58" fill="#FFF0DA"/>
+  <g fill="#17374D"><ellipse cx="436" cy="481" rx="22" ry="31"/><ellipse cx="588" cy="481" rx="22" ry="31"/></g>
+  <path d="M485 572q27 21 54 0" fill="none" stroke="#17374D" stroke-width="15" stroke-linecap="round"/>
+  <g fill="#FFF0DA"><circle cx="338" cy="668" r="13"/><circle cx="686" cy="668" r="13"/></g>
+</svg>

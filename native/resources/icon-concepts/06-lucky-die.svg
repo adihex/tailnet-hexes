@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Lucky Die</title>
+  <desc id="desc">An oversized isometric gaming die in cream and pink, on oxblood.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#7E2F40"/>
+  <path d="m512 240 246 142v284L512 808 266 666V382Z" fill="#F3DDBE" stroke="#4E2635" stroke-width="26" stroke-linejoin="round"/>
+  <path d="m266 382 246 142v284L266 666Z" fill="#E89C9A"/>
+  <path d="m758 382-246 142v284l246-142Z" fill="#C56379"/>
+  <path d="m266 382 246 142 246-142M512 524v284" fill="none" stroke="#4E2635" stroke-width="24" stroke-linejoin="round"/>
+  <ellipse cx="512" cy="384" rx="43" ry="25" fill="#7E2F40"/>
+  <ellipse cx="350" cy="501" rx="26" ry="38" transform="rotate(-26 350 501)" fill="#FFF0D8"/>
+  <ellipse cx="433" cy="661" rx="26" ry="38" transform="rotate(-26 433 661)" fill="#FFF0D8"/>
+  <g fill="#FFF0D8">
+    <ellipse cx="674" cy="498" rx="26" ry="38" transform="rotate(26 674 498)"/>
+    <ellipse cx="634" cy="581" rx="26" ry="38" transform="rotate(26 634 581)"/>
+    <ellipse cx="593" cy="666" rx="26" ry="38" transform="rotate(26 593 666)"/>
+  </g>
+</svg>
