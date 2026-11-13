@@ -1,0 +1,13 @@
+.{
+    .name = .hexes_native,
+    .version = "0.1.0",
+    .fingerprint = 0x16a545d404bd99d,
+    .minimum_zig_version = "0.17.0",
+    .dependencies = .{
+        .nanoui = .{
+            .url = "git+https://github.com/justrach/nanoui#83e91b31a1ee4117222cb469e9fd1672498d88af",
+            .hash = "nanoui-0.14.2-we0KMWMePQD99fzJSdtbKY7THmPHyZPGo7R_87RTG6kr",
+        },
+    },
+    .paths = .{ "build.zig", "build.zig.zon", "src", "tools", "resources", "README.md", "AGENTS.md" },
+}

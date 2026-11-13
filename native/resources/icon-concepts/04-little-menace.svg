@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Little Menace</title>
+  <desc id="desc">A lopsided one-eyed hex monster with a single tooth on sharp chartreuse.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#DDE976"/>
+  <path d="m381 324-27-91 111 73m132-1 81-85-1 134" fill="#ED8068"/>
+  <path d="m337 361 146-63 164 33 104 181-56 163-166 91-182-61-76-179Z" fill="#272D2C" stroke="#272D2C" stroke-width="30" stroke-linejoin="round"/>
+  <circle cx="513" cy="475" r="116" fill="#FFF4D8"/>
+  <circle cx="550" cy="464" r="48" fill="#272D2C"/>
+  <circle cx="566" cy="450" r="12" fill="#FFF4D8"/>
+  <path d="m479 651 101-15" stroke="#FFF4D8" stroke-width="24" stroke-linecap="round"/>
+  <path d="m523 650 8 35 26-40Z" fill="#FFF4D8"/>
+  <path d="m371 742-25 51m291-45 27 45" stroke="#272D2C" stroke-width="40" stroke-linecap="round"/>
+</svg>

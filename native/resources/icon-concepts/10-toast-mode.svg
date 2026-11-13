@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Toast Mode</title>
+  <desc id="desc">A smiling slice of toast wearing a tilted butter square, on pale blue.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#C4DEEA"/>
+  <path d="M306 437c-120-130-22-221 95-166 55-58 168-58 223 0 117-55 215 36 95 166v274q0 49-51 49H357q-51 0-51-49Z" fill="#F4D9A3" stroke="#AF774B" stroke-width="33" stroke-linejoin="round"/>
+  <path d="M359 456v225m307-225v225" stroke="#E5BF83" stroke-width="12" stroke-linecap="round"/>
+  <rect x="449" y="319" width="131" height="117" rx="24" transform="rotate(13 514 378)" fill="#E0B84B"/>
+  <rect x="444" y="306" width="131" height="117" rx="24" transform="rotate(13 509 365)" fill="#F9D86E"/>
+  <ellipse cx="427" cy="539" rx="22" ry="32" fill="#3E4147"/>
+  <ellipse cx="597" cy="539" rx="22" ry="32" fill="#3E4147"/>
+  <path d="M466 616q46 47 92 0" fill="none" stroke="#3E4147" stroke-width="19" stroke-linecap="round"/>
+  <g fill="#EAA488"><ellipse cx="388" cy="595" rx="29" ry="16"/><ellipse cx="636" cy="595" rx="29" ry="16"/></g>
+  <path d="m759 657 19 31 36 6-27 23-4 36-27-26-36 8 17-33Z" fill="#FFF6DC"/>
+</svg>

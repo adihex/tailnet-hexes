@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Wizard Terminal</title>
+  <desc id="desc">A crooked lavender wizard hat wearing a terminal prompt, on deep indigo.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#27233F"/>
+  <path d="M314 622 447 296Q464 250 510 280L643 356 559 350 698 622Z" fill="#BAA7ED"/>
+  <path d="m344 552 318-23 28 75-372 28Z" fill="#8573B7"/>
+  <ellipse cx="512" cy="642" rx="282" ry="70" transform="rotate(-7 512 642)" fill="#BAA7ED"/>
+  <path d="m421 428 50 40-43 48m98-4 62-5" fill="none" stroke="#FFF0BE" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m728 277 15 40 41 15-41 15-15 40-15-40-40-15 40-15Z" fill="#FFF0BE"/>
+  <circle cx="300" cy="392" r="17" fill="#FFF0BE"/>
+  <path d="m644 758 9 24 24 9-24 9-9 24-9-24-24-9 24-9Z" fill="#FFF0BE"/>
+</svg>

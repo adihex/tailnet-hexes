@@ -1,0 +1,209 @@
+{
+  "count": 24,
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "checks": [
+    "valid XML",
+    "described vectors",
+    "local-only references",
+    "24 distinct PNGs",
+    "RGBA 1024 \u00d7 1024"
+  ],
+  "renderer": "0.49.0",
+  "concepts": [
+    {
+      "number": 1,
+      "name": "Hex Portal",
+      "description": "A mint hexagonal portal with a small coral satellite on midnight blue.",
+      "svg": "01-hex-portal.svg",
+      "png": "01-hex-portal.png",
+      "png_sha256": "1a9b23c4b2c71673b6a297a65133c33ed4ee05057c3aa87b9585991f044f7e0a"
+    },
+    {
+      "number": 2,
+      "name": "Wizard Terminal",
+      "description": "A crooked lavender wizard hat wearing a terminal prompt, on deep indigo.",
+      "svg": "02-wizard-terminal.svg",
+      "png": "02-wizard-terminal.png",
+      "png_sha256": "5e24186d8fa25bf195b65f35cc2cba462e38e744565f1c24b6a31793f22b3a2f"
+    },
+    {
+      "number": 3,
+      "name": "Hex Cat",
+      "description": "An angular ink-colored cat with mint eyes and a curling tail on warm coral.",
+      "svg": "03-hex-cat.svg",
+      "png": "03-hex-cat.png",
+      "png_sha256": "32cc332bf85bc81ab54806a771b2ab5e55aab1810850b8118c016d236999c82d"
+    },
+    {
+      "number": 4,
+      "name": "Little Menace",
+      "description": "A lopsided one-eyed hex monster with a single tooth on sharp chartreuse.",
+      "svg": "04-little-menace.svg",
+      "png": "04-little-menace.png",
+      "png_sha256": "c25c8f07f8071cd5fa3bb46935892a55576663e6fa6cc3b231c9f4928115bb6c"
+    },
+    {
+      "number": 5,
+      "name": "Pocket Universe",
+      "description": "A cobalt hexagonal planet inside a vermilion orbit, on warm ivory.",
+      "svg": "05-pocket-universe.svg",
+      "png": "05-pocket-universe.png",
+      "png_sha256": "2f4da8911d6978b0f678497dbacd9469f459c7ab67790525d02c8c72b434bf27"
+    },
+    {
+      "number": 6,
+      "name": "Lucky Die",
+      "description": "An oversized isometric gaming die in cream and pink, on oxblood.",
+      "svg": "06-lucky-die.svg",
+      "png": "06-lucky-die.png",
+      "png_sha256": "eeb98713b41f7f28bf70ee6d0bcc53935e99c2abf2eede7d02f70b1111d9fc25"
+    },
+    {
+      "number": 7,
+      "name": "Packet Pigeon",
+      "description": "A folded-paper pigeon with an oversized cream wing and a coral beak on sky blue.",
+      "svg": "07-packet-pigeon.svg",
+      "png": "07-packet-pigeon.png",
+      "png_sha256": "cd04281b03622e4af445c25992dd60173bcd7821e3b80565eec3a5922e7516d8"
+    },
+    {
+      "number": 8,
+      "name": "Circuit Beetle",
+      "description": "A symmetrical green beetle whose legs and wing cases form a tiny circuit board.",
+      "svg": "08-circuit-beetle.svg",
+      "png": "08-circuit-beetle.png",
+      "png_sha256": "716fde8778cdb715fe4ba7db7c00c9dc97a6f1be6bcf348757e90f2d3251fa9d"
+    },
+    {
+      "number": 9,
+      "name": "Honey Hacker",
+      "description": "A little hexagonal bee in a bandit mask, with cream wings on honey gold.",
+      "svg": "09-honey-hacker.svg",
+      "png": "09-honey-hacker.png",
+      "png_sha256": "98925967d8a2b9c62848c0e4f6e9c18bfc1f4e68f8aebc7c3f7961281917bbcb"
+    },
+    {
+      "number": 10,
+      "name": "Toast Mode",
+      "description": "A smiling slice of toast wearing a tilted butter square, on pale blue.",
+      "svg": "10-toast-mode.svg",
+      "png": "10-toast-mode.png",
+      "png_sha256": "6491340e8bcd0137994333c76ee6fc94ed4c7e75929243126b8a0981aa6f5027"
+    },
+    {
+      "number": 11,
+      "name": "Tiny Kraken",
+      "description": "A coral six-armed octopus with a softly hexagonal head, on deep ocean blue.",
+      "svg": "11-tiny-kraken.svg",
+      "png": "11-tiny-kraken.png",
+      "png_sha256": "847eb3962c00423c25fde37947b442fdc37420b52d65b5f6269f8fb37d8506d2"
+    },
+    {
+      "number": 12,
+      "name": "Paper Ghost",
+      "description": "An eight-bit ivory ghost with mismatched eyes and a pink pixel blush, on lavender.",
+      "svg": "12-paper-ghost.svg",
+      "png": "12-paper-ghost.png",
+      "png_sha256": "b1432df1fcd7b9f3072f79beaf0cfee0b7dc4b0a3648b439f3733ffd72908f1c"
+    },
+    {
+      "number": 13,
+      "name": "Tangled H",
+      "description": "A soft H woven from coral and violet ribbons, with a wavy golden crossbar.",
+      "svg": "13-tangled-h.svg",
+      "png": "13-tangled-h.png",
+      "png_sha256": "079e8ff3a32ace221cc55a7c4a3f1c4ae7922c53c5f72fc0b6936ba80c1fa49d"
+    },
+    {
+      "number": 14,
+      "name": "Inbox Imp",
+      "description": "A walking cream envelope with a single orange eye where its seal should be.",
+      "svg": "14-inbox-imp.svg",
+      "png": "14-inbox-imp.png",
+      "png_sha256": "18083fce91d8fc278817e4a6d7637af1dbcccfe22601fd0394f9614351d15d3c"
+    },
+    {
+      "number": 15,
+      "name": "Signal Sprout",
+      "description": "A small sprout in a hexagonal terracotta pot, sending two hand-drawn signal arcs.",
+      "svg": "15-signal-sprout.svg",
+      "png": "15-signal-sprout.png",
+      "png_sha256": "96aeb6bfd84718b8a971b8e4b80ad70abda31b48fcc6ede7e536fd8cde57236e"
+    },
+    {
+      "number": 16,
+      "name": "Matchbox Rocket",
+      "description": "A tilted vintage cream rocket with a red nose and a tiny orange flame on charcoal.",
+      "svg": "16-matchbox-rocket.svg",
+      "png": "16-matchbox-rocket.png",
+      "png_sha256": "230752443ab965cb2d59bcbac500d67fce46331333a8807a18d1295de70dc5de"
+    },
+    {
+      "number": 17,
+      "name": "Disco Shroom",
+      "description": "A squat red mushroom with square cap spots and a checkerboard dance floor.",
+      "svg": "17-disco-shroom.svg",
+      "png": "17-disco-shroom.png",
+      "png_sha256": "9afb8fc4fafaff6d1b86007f9ea5b6324ff3070e7d5c8ffda85221664dbaefb9"
+    },
+    {
+      "number": 18,
+      "name": "Rubber Duck Debug",
+      "description": "A chunky golden rubber duck with a terminal chevron on its wing, on deep teal.",
+      "svg": "18-rubber-duck-debug.svg",
+      "png": "18-rubber-duck-debug.png",
+      "png_sha256": "54368a166b2ad95c68a5e477daba765765a20eb52086047c480dcc1ef8e65ebc"
+    },
+    {
+      "number": 19,
+      "name": "Ocular Hex",
+      "description": "A watchful green eye with a six-sided chartreuse iris inside a spare dark hexagon.",
+      "svg": "19-ocular-hex.svg",
+      "png": "19-ocular-hex.png",
+      "png_sha256": "906bffb658623d27393d58f9f4549e405b43ad55345f78895f3937e8b1ea9c1d"
+    },
+    {
+      "number": 20,
+      "name": "Sneaky Raccoon",
+      "description": "A charcoal-masked raccoon with one winking eye, on a muted tangerine tile.",
+      "svg": "20-sneaky-raccoon.svg",
+      "png": "20-sneaky-raccoon.png",
+      "png_sha256": "5c5d793b7407d4a29770b84fc622df5fa59d8fc67abe892a8f59d8d74da9be99"
+    },
+    {
+      "number": 21,
+      "name": "Night Moth",
+      "description": "A symmetrical cream moth with geometric wing eyes and a pink body, on dark aubergine.",
+      "svg": "21-night-moth.svg",
+      "png": "21-night-moth.png",
+      "png_sha256": "949126cfc41fcfc89b524797128b0adc646d2c5b9772528dec1b5899d1e606db"
+    },
+    {
+      "number": 22,
+      "name": "Cursor Comet",
+      "description": "An oversized cream pointer shooting across a vermilion sky with three ink trails.",
+      "svg": "22-cursor-comet.svg",
+      "png": "22-cursor-comet.png",
+      "png_sha256": "dfe52ea4390232bb767eb2119192e4224ccd79e52597439d66e0e542b84710f9"
+    },
+    {
+      "number": 23,
+      "name": "Noodle Dragon",
+      "description": "A sleepy lime dragon tied into a loose noodle knot on dusty violet.",
+      "svg": "23-noodle-dragon.svg",
+      "png": "23-noodle-dragon.png",
+      "png_sha256": "321338479e58f8dae2fb7b6631441d13d1bc813b579868c829604f8719e2a205"
+    },
+    {
+      "number": 24,
+      "name": "Liquid Rune",
+      "description": "An organic dark petrol H with a small vermilion droplet suspended between its uprights.",
+      "svg": "24-liquid-rune.svg",
+      "png": "24-liquid-rune.png",
+      "png_sha256": "3eadee492336971d5037503ed3979b23c93ba6daa5671c13b7eed1653682abbb"
+    }
+  ]
+}

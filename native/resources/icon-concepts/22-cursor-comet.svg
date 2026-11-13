@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Cursor Comet</title>
+  <desc id="desc">An oversized cream pointer shooting across a vermilion sky with three ink trails.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#DF6757"/>
+  <g fill="none" stroke="#3B3943" stroke-width="31" stroke-linecap="round">
+    <path d="m264 602 112-110m-91 224 148-148m-39 192 111-110"/>
+  </g>
+  <path d="m366 263 391 314-176 41-77 160Z" fill="#3B3943" stroke="#3B3943" stroke-width="25" stroke-linejoin="round"/>
+  <path d="m353 239 391 314-176 41-77 160Z" fill="#FFF0CF" stroke="#FFF0CF" stroke-width="16" stroke-linejoin="round"/>
+  <path d="m690 285 10 28 28 10-28 10-10 28-10-28-28-10 28-10Z" fill="#FFF0CF"/>
+  <circle cx="760" cy="728" r="19" fill="#FFF0CF"/>
+</svg>

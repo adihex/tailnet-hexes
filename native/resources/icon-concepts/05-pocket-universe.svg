@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Pocket Universe</title>
+  <desc id="desc">A cobalt hexagonal planet inside a vermilion orbit, on warm ivory.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#F4EBD7"/>
+  <ellipse cx="512" cy="514" rx="326" ry="110" transform="rotate(-28 512 514)" fill="none" stroke="#D65D48" stroke-width="35"/>
+  <path d="m512 264 216 125v250L512 764 296 639V389Z" fill="#3556A4"/>
+  <path d="m512 264 216 125-216 125-216-125Z" fill="#5075C3"/>
+  <path d="M512 514v250L296 639V389Z" fill="#284387"/>
+  <path d="M242 604q128 80 334-28t213-205" fill="none" stroke="#D65D48" stroke-width="35" stroke-linecap="round"/>
+  <circle cx="765" cy="406" r="37" fill="#D65D48"/>
+  <path d="m302 248 12 29 30 12-30 12-12 30-12-30-29-12 29-12Z" fill="#243750"/>
+  <circle cx="744" cy="748" r="16" fill="#243750"/>
+</svg>

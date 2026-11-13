@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Ocular Hex</title>
+  <desc id="desc">A watchful green eye with a six-sided chartreuse iris inside a spare dark hexagon.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#EBE8DB"/>
+  <path d="m512 230 244 141v282L512 794 268 653V371Z" fill="none" stroke="#254E46" stroke-width="29" stroke-linejoin="round"/>
+  <path d="M223 512q289-286 578 0-289 286-578 0Z" fill="#254E46"/>
+  <path d="M271 512q241-213 482 0-241 213-482 0Z" fill="#FFF7E3"/>
+  <path d="m512 369 123 71v144l-123 71-123-71V440Z" fill="#C8D77A"/>
+  <rect x="482" y="418" width="60" height="188" rx="30" fill="#254E46"/>
+  <circle cx="558" cy="451" r="22" fill="#FFF7E3"/>
+  <path d="m337 249 23 40m327-40-23 40" stroke="#C7765A" stroke-width="21" stroke-linecap="round"/>
+</svg>

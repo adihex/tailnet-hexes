@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Hex Cat</title>
+  <desc id="desc">An angular ink-colored cat with mint eyes and a curling tail on warm coral.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#F4947D"/>
+  <path d="M567 727c170 102 276 14 206-85" fill="none" stroke="#252C36" stroke-width="65" stroke-linecap="round"/>
+  <path d="m292 505 8-220 153 89q59-23 118 0l153-89 8 220q33 190-220 238-253-48-220-238Z" fill="#252C36"/>
+  <path d="m328 339 79 52-75 37m364-89-79 52 75 37" fill="#CC736C"/>
+  <ellipse cx="414" cy="507" rx="46" ry="59" fill="#BDE8CB"/>
+  <ellipse cx="610" cy="507" rx="46" ry="59" fill="#BDE8CB"/>
+  <path d="M419 468v75m186-75v75" stroke="#252C36" stroke-width="22" stroke-linecap="round"/>
+  <path d="m491 589 21 18 21-18" fill="#F4947D" stroke="#F4947D" stroke-width="13" stroke-linejoin="round"/>
+  <path d="M512 607v27m0-1q-24 25-46 1m46-1q24 25 46 1" fill="none" stroke="#F2E7CC" stroke-width="14" stroke-linecap="round"/>
+</svg>

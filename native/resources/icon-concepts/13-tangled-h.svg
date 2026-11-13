@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Tangled H</title>
+  <desc id="desc">A soft H woven from coral and violet ribbons, with a wavy golden crossbar.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#F3DFCE"/>
+  <rect x="292" y="267" width="148" height="490" rx="74" fill="#D67562"/>
+  <rect x="584" y="267" width="148" height="490" rx="74" fill="#766096"/>
+  <path d="M365 510c88-134 206 134 293 0" fill="none" stroke="#54465C" stroke-width="145" stroke-linecap="round"/>
+  <path d="M365 493c88-134 206 134 293 0" fill="none" stroke="#E8AE62" stroke-width="132" stroke-linecap="round"/>
+  <path d="M366 331v144" stroke="#D67562" stroke-width="148" stroke-linecap="round"/>
+  <path d="M658 550v143" stroke="#766096" stroke-width="148" stroke-linecap="round"/>
+  <path d="M327 330v83m292 211v69" stroke="#F9EBD9" stroke-opacity=".35" stroke-width="15" stroke-linecap="round"/>
+</svg>

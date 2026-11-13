@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Honey Hacker</title>
+  <desc id="desc">A little hexagonal bee in a bandit mask, with cream wings on honey gold.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="#E9B854"/>
+  <ellipse cx="371" cy="385" rx="89" ry="135" transform="rotate(-31 371 385)" fill="#FFF0CE"/>
+  <ellipse cx="653" cy="385" rx="89" ry="135" transform="rotate(31 653 385)" fill="#FFF0CE"/>
+  <path d="m461 356-35-92m137 92 35-92" stroke="#38342B" stroke-width="24" stroke-linecap="round"/>
+  <path d="m512 338 206 119v238L512 814 306 695V457Z" fill="#38342B"/>
+  <path d="m512 376 174 101v72H338v-72Z" fill="#F7D46D"/>
+  <path d="M338 597h348v60H338Zm57 116h234l-117 68Z" fill="#F7D46D"/>
+  <path d="M338 470q86-51 174 13 88-64 174-13v85q-86 48-174-3-88 51-174 3Z" fill="#38342B"/>
+  <ellipse cx="423" cy="514" rx="29" ry="34" fill="#FFF0CE"/>
+  <ellipse cx="601" cy="514" rx="29" ry="34" fill="#FFF0CE"/>
+  <path d="m512 814-20-37h40Z" fill="#38342B"/>
+</svg>

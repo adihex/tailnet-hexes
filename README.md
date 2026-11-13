@@ -105,6 +105,11 @@ prompt is never sent.
 
 ## Clients (Mac, phone, any tailnet machine)
 
+The shared **native macOS / Android client** is in [native/](native/README.md).
+It uses NanoUI/Zig rather than a webview; see its README for the core
+milestone, build commands, and current Android limitations. The existing
+web, CLI, and Expo clients remain available.
+
 The server stays on adi-linux. A client is the `hex` CLI, `hex attach` (Tern cards
 when Tern is running, plain terminal otherwise), and the OMP extension. In a Tern
 pane, attach keeps one Tern session for both cards and keyboard input; outside
